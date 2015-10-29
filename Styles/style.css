@@ -1,0 +1,64 @@
+/* CSS Document */
+
+html
+{
+	font-size:16px;
+}
+
+.wrapper
+{
+	width:80%;
+	margin:auto;
+}
+
+.table
+{
+	border-collapse:collapse;
+	min-width:600px;
+	max-width:1500px;
+	width:100%;
+	border: 3px solid black;
+	overflow:hidden;
+}
+
+.table caption
+{
+	font-size:2rem;
+	text-decoration:underline;
+	font-weight:bold;
+	padding-bottom:10px;
+	background-color:lightgrey;
+
+}
+
+.table th
+{
+	height:50px;
+	background-color:hsla(220, 100%, 80%, 1);
+	border:3px solid black;
+	position:relative;
+}
+
+.table td
+{
+	height:50px;
+	text-align:center;
+	border:2px solid black;
+	position:relative;
+}
+
+.table tbody tr:hover
+{
+	background-color: #ffa;
+}
+
+.table tbody td:hover::after, .table tbody th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
